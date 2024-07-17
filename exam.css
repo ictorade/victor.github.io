@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#exam {
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Adjust this value as needed */
+    margin: 0 auto;
+    background: rgb(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/* Choice container styles */
+.choice-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    color: #0400ff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.choice-container:hover {
+    background: #0400ff;
+    color: antiquewhite;
+}
+
+.option {
+    width: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.option-text {
+    flex-grow: 1;
+    text-align: left;
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Selected option styles */
+.option-text.selected {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-around;
+    line-height: 10px;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+button{
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color:#0400ff;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bold;
+    font-style: oblique;
+    transition: 1s;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: #0400ff;
+}
+
+/* Add this CSS rule to the existing styles */
+
+.choice-container.last-selected {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    pointer-events: none; /* Prevent further changes */
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    .hud-prefix{
+        font-size: 20px;
+    }
+    .hud-main-text{
+        font-size: 20px;
+    }
+    #hud{
+        margin: 0px;
+        padding: 0px;
+    }
+}

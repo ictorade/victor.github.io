@@ -1,0 +1,102 @@
+body {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures canvas is behind other content */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,255,0.5);
+    width: 80%;
+    height: 70vh;
+    max-width: 600px;
+    box-sizing: border-box;
+   
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.btn {
+    display: block; /* Make the button a block element */
+    width: 70%; /* Full width button */
+    margin: 1.5rem 0; /* Margin top and bottom for spacing */
+    padding: 0.75rem 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+        height: 70vh;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        width: 70%;
+        
+    }
+}
