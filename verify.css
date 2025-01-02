@@ -27,11 +27,13 @@ body{
     border-radius: 8px;
 }
 
-button{
-    width: 31rem;
+button {
+    width: 90%; /* Use a percentage for responsiveness */
+    max-width: 31rem; /* Add a max-width to prevent it from becoming too wide */
     border-style: dotted;
     border-color: #0400ff;
-    
+    padding: 10px; /* Adjust padding for consistency */
+    font-size: 1rem; /* Ensure font size adjusts as well */
 }
 
 /* Choice container styles */
