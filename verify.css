@@ -1,8 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
 /* Container styles */
 .container {
     display: flex;
@@ -16,75 +11,63 @@ body{
     background-size: cover;
 }
 
-
+/* Results Box */
 #results {
     text-align: center;
     width: 100%;
-    max-width: 500px; /* Adjust this value as needed */
+    max-width: 500px;
     margin: 0 auto;
-    background: rgb(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
     padding: 20px;
     border-radius: 8px;
 }
 
+/* Buttons styling */
 button, .btnn {
-    width: 90%; /* Make the width dynamic */
-    max-width: 31rem; /* Prevent it from becoming too wide */
-    margin: 10px auto; /* Center the buttons */
-    padding: 10px; /* Add consistent padding */
+    display: block;
+    width: 90%; /* Dynamic width for responsiveness */
+    max-width: 31rem; /* Set maximum width for large screens */
+    margin: 10px auto; /* Center alignment */
+    padding: 12px; /* Consistent padding */
     background: #fff;
     color: #0400ff;
+    font-size: 1.2rem; /* Font size */
+    border: 2px dotted #0400ff; /* Border styling */
     border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-    font-size: 1rem;
-    border-style: dotted;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for buttons */
 button:hover, .btnn:hover {
     background: #0400ff;
-    color: antiquewhite;
+    color: #fff;
 }
 
+/* Input styling */
 input {
-    margin-bottom: 1rem;
-    width: 90%; /* Make input responsive */
+    display: block;
+    width: 90%;
     max-width: 30rem;
-    padding: 0.5rem;
-    font-size: 1.4rem;
-    border: none;
+    margin: 0 auto 1rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    box-shadow: 0, 0.1rem 1.4rem, 0 rgba(86, 185, 235, 0.5);
 }
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 480px) {
     button, .btnn {
-        width: 80%; /* Adjust the button width for small screens */
+        width: 95%; /* Adjust width for smaller screens */
+        font-size: 1rem; /* Reduce font size */
+        padding: 10px;
     }
 
     input {
-        width: 80%; /* Adjust input width */
+        width: 95%; /* Adjust input width */
     }
 }
 
-
-#saveScoreBtn{
-    align-items: center;
-    border-radius: 4px;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    padding: 8px;
-    border: none;
-    color: #0400ff;
-    font-weight: 300px;
-    border-style: dotted;
-}
-
-#saveScoreBtn:hover{
-    background: #0400ff;
-    color: antiquewhite;
-}
