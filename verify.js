@@ -20,10 +20,10 @@ document.getElementById('verificationForm').addEventListener('submit', function(
             
             window.location.href = 'exam.html'; // Redirect to exam page if the matric number is valid
         } else {
-            alert('Invalid Matric Number. Please try again.');
+            alert('Invalid Reg. Number. Please try again.');
         }
     } else {
-        alert('Please enter your Matric Number.');
+        alert('Please enter your Reg. Number.');
     }
 });
 
